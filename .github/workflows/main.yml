@@ -18,6 +18,9 @@ jobs:
       run: python test.py
     - name: Commit files
       run: |
+        git config --local user.email "abc35572003@naver.com"
+        git config --local user.name "khs-st[bot]"
+        git update-index -q --refresh
         if ! git diff-index --quiet HEAD --; then
           git config --local user.email "abc35572003@naver.com"
           git config --local user.name "khs-st[bot]"
