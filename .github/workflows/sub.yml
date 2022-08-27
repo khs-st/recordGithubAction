@@ -13,4 +13,6 @@ jobs:
         ID: ${{ github.actor }}
         JOB: "백수"
         TRUE: true
-      run: echo "My Name is $NAME , My Id is $ID , My Job is $Job and this is $TRUE"      
+      run: | 
+        echo "내 이름은 $NAME 입니다."
+        echo "My Name is $NAME , My Id is $ID , My Job is $Job and this is $TRUE"      
