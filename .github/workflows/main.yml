@@ -8,8 +8,8 @@ jobs:
   steps:
     # run 뒤에는 실제 동작하는 코드 입력하여야 한다.
     - name: hello world 출력!
-    run: echo Hello, world!
+      run: echo Hello, world!
     - name: 디렉토리 출력!
-    run: ls -al
+      run: ls -al
     - name: 파이썬 버전 출력!
-    run: python -V
+      run: python -V
