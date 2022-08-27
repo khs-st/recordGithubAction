@@ -18,9 +18,9 @@ jobs:
       run: python test.py
     - name: Commit files
       run: |
-        git config --local user.email "abc35572003@naver.com"
-        git config --local user.name "khs-st[bot]"
         if ! git diff-index --quiet HEAD --; then
+          git config --local user.email "abc35572003@naver.com"
+          git config --local user.name "khs-st[bot]"
           git add .
           git commit -m "Run crawler and update current data"
         fi
