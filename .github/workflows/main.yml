@@ -16,6 +16,8 @@ jobs:
       run: pip install -r requirements.txt
     - name: 3. 파이썬 실행
       run: python test.py
+    - name: 4. 파이썬 실행
+      run: python test2.py      
     - name: Commit files
       run: |
         git config --local user.email "abc35572003@naver.com"
