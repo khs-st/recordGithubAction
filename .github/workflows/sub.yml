@@ -9,5 +9,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: 1. 변수 출력
       env:
-        NAME: "kobalja"     
-      run: echo "My Id = $NAME " 
+        NAME: "kobalja"
+        ID: ${{ github.actor }}
+        JOB: "백수"
+        TRUE: true
+      run: echo "My Name is $NAME , My Id is $ID , My Job is $Job and this is $TRUE"      
