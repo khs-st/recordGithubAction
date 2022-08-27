@@ -20,8 +20,10 @@ jobs:
       run: |
         git config --local user.email "abc35572003@naver.com"
         git config --local user.name "khs-st[bot]"
-        git add .
-        git commit -m "Run crawler and update current data"
+        if ! git diff-index --quiet HEAD --; then
+          git add .
+          git commit -m "Run crawler and update current data"
+        fi
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
